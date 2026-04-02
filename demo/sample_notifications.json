@@ -1,0 +1,215 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Sample notification data for FocusFlow AI testing and demonstration",
+    "generated": "2024-01-15T10:00:00Z"
+  },
+  "activityModes": {
+    "study": {
+      "name": "Study Mode",
+      "description": "Maximum focus - blocks distractions",
+      "config": {
+        "blockedApps": ["instagram", "facebook", "tiktok", "youtube", "netflix", "twitter"],
+        "allowedApps": ["gmail", "whatsapp", "slack", "zoom", "teams"],
+        "priorityContacts": ["teacher", "professor", "emergency", "mom", "dad"]
+      }
+    },
+    "work": {
+      "name": "Work Mode",
+      "description": "Professional focus - prioritizes work apps",
+      "config": {
+        "blockedApps": ["instagram", "facebook", "tiktok", "youtube", "netflix", "twitter", "gaming"],
+        "allowedApps": ["slack", "teams", "gmail", "outlook", "zoom", "linkedin"],
+        "priorityContacts": ["boss", "manager", "client", "emergency"]
+      }
+    },
+    "sleep": {
+      "name": "Sleep Mode",
+      "description": "Rest mode - only emergencies get through",
+      "config": {
+        "blockedApps": ["instagram", "facebook", "tiktok", "youtube", "netflix", "twitter", "slack", "teams"],
+        "allowedApps": ["phone", "messages"],
+        "priorityContacts": ["emergency", "family", "mom", "dad"]
+      }
+    },
+    "leisure": {
+      "name": "Leisure Mode",
+      "description": "Relaxation time - minimal filtering",
+      "config": {
+        "blockedApps": [],
+        "allowedApps": [],
+        "priorityContacts": []
+      }
+    }
+  },
+  "testScenarios": [
+    {
+      "id": "study_social_block",
+      "name": "Study Mode - Block Social Media",
+      "description": "Social media notification during study should be blocked",
+      "context": {
+        "activity": "study",
+        "hour": 14,
+        "isWeekday": true
+      },
+      "notification": {
+        "app": "instagram",
+        "sender": "friend",
+        "message": "Check out my new post! 😊"
+      },
+      "expectedDecision": "BLOCK",
+      "expectedConfidence": 0.85
+    },
+    {
+      "id": "study_urgent_show",
+      "name": "Study Mode - Show Urgent Educational",
+      "description": "Urgent message from teacher during study should be shown",
+      "context": {
+        "activity": "study",
+        "hour": 14,
+        "isWeekday": true
+      },
+      "notification": {
+        "app": "whatsapp",
+        "sender": "teacher",
+        "message": "URGENT: Assignment due tomorrow"
+      },
+      "expectedDecision": "SHOW",
+      "expectedConfidence": 0.92
+    },
+    {
+      "id": "study_promo_delay",
+      "name": "Study Mode - Delay Promotional",
+      "description": "Promotional notification during study should be delayed",
+      "context": {
+        "activity": "study",
+        "hour": 14,
+        "isWeekday": true
+      },
+      "notification": {
+        "app": "amazon",
+        "sender": "promo",
+        "message": "50% off electronics - Limited time offer!"
+      },
+      "expectedDecision": "DELAY",
+      "expectedConfidence": 0.78
+    },
+    {
+      "id": "work_manager_show",
+      "name": "Work Mode - Show Manager Message",
+      "description": "Message from manager during work should be shown",
+      "context": {
+        "activity": "work",
+        "hour": 10,
+        "isWeekday": true
+      },
+      "notification": {
+        "app": "slack",
+        "sender": "manager",
+        "message": "Team meeting in 5 mins"
+      },
+      "expectedDecision": "SHOW",
+      "expectedConfidence": 0.95
+    },
+    {
+      "id": "work_social_block",
+      "name": "Work Mode - Block Social Media",
+      "description": "Social media during work should be blocked",
+      "context": {
+        "activity": "work",
+        "hour": 10,
+        "isWeekday": true
+      },
+      "notification": {
+        "app": "instagram",
+        "sender": "friend",
+        "message": "Lunch today?"
+      },
+      "expectedDecision": "BLOCK",
+      "expectedConfidence": 0.88
+    },
+    {
+      "id": "sleep_emergency_show",
+      "name": "Sleep Mode - Show Emergency",
+      "description": "Emergency notification during sleep should be shown",
+      "context": {
+        "activity": "sleep",
+        "hour": 23,
+        "isWeekday": false
+      },
+      "notification": {
+        "app": "whatsapp",
+        "sender": "emergency_contact",
+        "message": "URGENT: Call me back ASAP"
+      },
+      "expectedDecision": "SHOW",
+      "expectedConfidence": 0.98
+    },
+    {
+      "id": "sleep_social_block",
+      "name": "Sleep Mode - Block Social",
+      "description": "Social notification during sleep should be blocked",
+      "context": {
+        "activity": "sleep",
+        "hour": 23,
+        "isWeekday": false
+      },
+      "notification": {
+        "app": "telegram",
+        "sender": "group",
+        "message": "Weekend plans discussion"
+      },
+      "expectedDecision": "BLOCK",
+      "expectedConfidence": 0.91
+    },
+    {
+      "id": "leisure_any_show",
+      "name": "Leisure Mode - Show All",
+      "description": "Any notification during leisure should be shown",
+      "context": {
+        "activity": "leisure",
+        "hour": 15,
+        "isWeekday": true
+      },
+      "notification": {
+        "app": "netflix",
+        "sender": "notification",
+        "message": "New season available!"
+      },
+      "expectedDecision": "SHOW",
+      "expectedConfidence": 0.82
+    }
+  ],
+  "appPriorities": {
+    "critical": ["phone", "messages"],
+    "high": ["whatsapp", "telegram", "gmail", "slack", "teams", "zoom"],
+    "medium": ["outlook", "linkedin", "calendar", "reminder", "email"],
+    "low": ["instagram", "facebook", "twitter", "tiktok", "youtube", "spotify", "amazon", "netflix", "gaming", "uber_eats"]
+  },
+  "urgencyKeywords": [
+    "urgent",
+    "emergency",
+    "important",
+    "asap",
+    "immediate",
+    "critical",
+    "alert",
+    "warning",
+    "deadline",
+    "meeting"
+  ],
+  "prioritySenderPatterns": [
+    "boss",
+    "manager",
+    "teacher",
+    "professor",
+    "doctor",
+    "emergency",
+    "bank",
+    "security",
+    "admin",
+    "mom",
+    "dad",
+    "family"
+  ]
+}

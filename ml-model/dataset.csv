@@ -1,0 +1,114 @@
+timestamp,app,sender,message,activity,is_weekday,action
+1693526400,instagram,friend,Check out my new post!,study,1,BLOCK
+1693526400,whatsapp,teacher,URGENT: Assignment due tomorrow,study,1,SHOW
+1693526400,amazon,promo,50% off electronics - Limited time offer!,study,1,DELAY
+1693526400,gmail,professor,Office hours cancelled today,study,1,SHOW
+1693526400,slack,study_group,Meeting at 3pm for project,study,1,SHOW
+1693526400,tiktok,notification,Your video is ready to post,study,1,BLOCK
+1693526400,whatsapp,mom,Call me when free,study,1,SHOW
+1693526400,youtube,notification,New video from your favorite channel,study,1,BLOCK
+1693526400,slack,manager,Team meeting in 5 mins,work,1,SHOW
+1693526400,gmail,colleague,Project update - please review,work,1,SHOW
+1693526400,instagram,friend,Lunch today?,work,1,BLOCK
+1693526400,teams,client,URGENT: Contract needs signature,work,1,SHOW
+1693526400,facebook,notification,You have 3 new friend requests,work,1,BLOCK
+1693526400,linkedin,recruiter,Exciting job opportunity,work,1,DELAY
+1693526400,outlook,boss,Quarterly review scheduled,work,1,SHOW
+1693526400,twitter,notification,Trending topics you missed,work,1,BLOCK
+1693526400,telegram,group,Weekend plans discussion,sleep,0,BLOCK
+1693526400,whatsapp,emergency_contact,URGENT: Call me back ASAP,sleep,0,SHOW
+1693526400,instagram,influencer,Live stream starting now!,sleep,0,BLOCK
+1693526400,phone,family,Missed call,sleep,0,SHOW
+1693526400,email,newsletter,Daily digest - Top stories,sleep,0,BLOCK
+1693526400,slack,coworker,Quick question about work,sleep,0,BLOCK
+1693526400,gmail,bank,ALERT: Unusual activity detected,sleep,0,SHOW
+1693526400,messages,emergency,Emergency alert: Weather warning,sleep,0,SHOW
+1693526400,netflix,notification,New season available!,leisure,1,SHOW
+1693526400,spotify,system,Your weekly playlist is ready,leisure,1,SHOW
+1693526400,instagram,friend,Check out this meme lol,leisure,1,SHOW
+1693526400,gmail,friend,Party this weekend!,leisure,1,SHOW
+1693526400,amazon,delivery,Your package has been delivered,leisure,1,SHOW
+1693526400,youtube,creator,Live stream starting,leisure,1,SHOW
+1693526400,uber_eats,promo,30% off your next order,leisure,1,DELAY
+1693526400,whatsapp,best_friend,Movie night tonight?,leisure,1,SHOW
+1693526400,whatsapp,teacher,Important: Class cancelled tomorrow,study,1,SHOW
+1693526400,instagram,best_friend,Check this out!,study,1,BLOCK
+1693526400,gmail,university,URGENT: Registration deadline,study,1,SHOW
+1693526400,tiktok,creator,New video posted,study,1,BLOCK
+1693526400,phone,doctor,Appointment reminder,study,1,SHOW
+1693526400,slack,team,Project deadline reminder,work,1,SHOW
+1693526400,facebook,friend,Birthday reminder,work,1,BLOCK
+1693526400,teams,boss,URGENT: Client meeting moved,work,1,SHOW
+1693526400,youtube,subscription,New tutorial video,work,1,BLOCK
+1693526400,gmail,hr,Important: Benefits enrollment,work,1,SHOW
+1693526400,whatsapp,spouse,Dinner plans?,sleep,0,DELAY
+1693526400,phone,unknown,Unknown number calling,sleep,0,BLOCK
+1693526400,gmail,security,IMPORTANT: Password reset required,sleep,0,SHOW
+1693526400,instagram,following,New post from followee,sleep,0,BLOCK
+1693526400,messages,child,School tomorrow reminder,sleep,0,SHOW
+1693526400,netflix,recommendation,Based on your viewing,leisure,1,SHOW
+1693526400,amazon,order,Your order has shipped,leisure,1,SHOW
+1693526400,whatsapp,friend group,Plans for tomorrow,leisure,1,SHOW
+1693526400,telegram,channel,Breaking news update,leisure,1,DELAY
+1693526400,instagram,brand,Sponsored content,study,1,BLOCK
+1693526400,whatsapp,professor,URGENT: Lab report due,study,1,SHOW
+1693526400,slack,bot,Daily standup reminder,work,1,SHOW
+1693526400,email,manager,Performance review feedback,work,1,SHOW
+1693526400,phone,emergency,Emergency alert test,sleep,0,SHOW
+1693526400,whatsapp,team lead,URGENT: Production issue,work,1,SHOW
+1693526400,facebook,group,Event invitation,leisure,1,DELAY
+1693526400,linkedin,connection,New connection request,work,1,DELAY
+1693526400,twitter,following,Tweet from followed account,study,1,BLOCK
+1693526400,gmail,admin,IMPORTANT: System maintenance,work,1,SHOW
+1693526400,spotify,playlist,Release Radar is here,leisure,1,SHOW
+1693526400,amazon,wishlist,Price drop alert,leisure,1,DELAY
+1693526400,whatsapp,classmate,Study group meeting,study,1,SHOW
+1693526400,slack,channel,Important announcement,work,1,SHOW
+1693526400,phone,parent,Calling to check in,sleep,0,SHOW
+1693526400,instagram,explore,Recommended for you,leisure,1,SHOW
+1693526400,teams,it,URGENT: Security update required,work,1,SHOW
+1693526400,email,finance,Tax document ready,work,1,SHOW
+1693526400,youtube,subscription,Live stream starting,leisure,1,SHOW
+1693526400,whatsapp,roommate,Groceries reminder,leisure,1,SHOW
+1693526400,tiktok,trending,Trending video alert,study,1,BLOCK
+1693526400,gmail,advisor,IMPORTANT: Thesis deadline,study,1,SHOW
+1693526400,slack,direct,boss,Need you in my office,work,1,SHOW
+1693526400,facebook,marketplace,Item you viewed is on sale,leisure,1,DELAY
+1693526400,phone,delivery,Package delivery update,leisure,1,SHOW
+1693526400,whatsapp,sibling,Family dinner Sunday,sleep,0,DELAY
+1693526400,email,newsletter,Weekly tech digest,sleep,0,BLOCK
+1693526400,instagram,story,New story from friend,leisure,1,SHOW
+1693526400,linkedin,job,Job matching your profile,work,1,DELAY
+1693526400,teams,calendar,Meeting starting in 10 minutes,work,1,SHOW
+1693526400,amazon,prime,Prime Day starts tomorrow,leisure,1,DELAY
+1693526400,whatsapp,project_team,URGENT: Bug in production,work,1,SHOW
+1693526400,gmail,legal,IMPORTANT: Policy update,work,1,SHOW
+1693526400,phone,doctor,Lab results ready,study,1,SHOW
+1693526400,slack,alerts,Server alert: High CPU,work,1,SHOW
+1693526400,facebook,event,Birthday event tomorrow,leisure,1,DELAY
+1693526400,twitter,trending,Trending in your country,leisure,1,SHOW
+1693526400,whatsapp,mom,Happy birthday!,leisure,1,SHOW
+1693526400,email,boss,Great job on the presentation,work,1,SHOW
+1693526400,instagram,reel,New reel from creator,study,1,BLOCK
+1693526400,teams,hr,IMPORTANT: Open enrollment,work,1,SHOW
+1693526400,phone,bank,Fraud alert on your account,sleep,0,SHOW
+1693526400,whatsapp,friend,Vacation photos ready,leisure,1,SHOW
+1693526400,gmail,support,Ticket resolved,work,1,DELAY
+1693526400,spotify,artist,New release from followed artist,leisure,1,SHOW
+1693526400,slack,random,Someone mentioned you,work,1,DELAY
+1693526400,youtube,comment,New comment on your video,leisure,1,SHOW
+1693526400,whatsapp,emergency,URGENT: Family emergency,sleep,0,SHOW
+1693526400,amazon,return,Return request approved,leisure,1,DELAY
+1693526400,email,recruiter,Interview invitation,work,1,SHOW
+1693526400,phone,insurance,Claim update,leisure,1,DELAY
+1693526400,instagram,mention,You were mentioned in a post,leisure,1,SHOW
+1693526400,teams,security,URGENT: MFA required,work,1,SHOW
+1693526400,gmail,travel,Flight check-in open,leisure,1,DELAY
+1693526400,whatsapp,boss,Call me when you can,work,1,SHOW
+1693526400,facebook,friend,New photo tagged,leisure,1,SHOW
+1693526400,linkedin,company,Company update,work,1,DELAY
+1693526400,phone,pharmacy,Prescription ready for pickup,study,1,SHOW
+1693526400,slack,pinned,Important document shared,work,1,SHOW
+1693526400,email,accounting,Expense report approved,work,1,DELAY
+1693526400,netflix,new,New episodes available,leisure,1,SHOW
+1693526400,whatsapp,neighbor,Package received for you,leisure,1,SHOW
