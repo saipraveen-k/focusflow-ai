@@ -72,7 +72,7 @@ timestamp,app,sender,message,activity,is_weekday,action
 1693526400,whatsapp,roommate,Groceries reminder,leisure,1,SHOW
 1693526400,tiktok,trending,Trending video alert,study,1,BLOCK
 1693526400,gmail,advisor,IMPORTANT: Thesis deadline,study,1,SHOW
-1693526400,slack,direct,boss,Need you in my office,work,1,SHOW
+1693526400,slack,direct,boss Need you in my office,work,1,SHOW
 1693526400,facebook,marketplace,Item you viewed is on sale,leisure,1,DELAY
 1693526400,phone,delivery,Package delivery update,leisure,1,SHOW
 1693526400,whatsapp,sibling,Family dinner Sunday,sleep,0,DELAY

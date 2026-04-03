@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useQuery } from 'react-query';
 import axios from 'axios';
 import { 
@@ -10,7 +10,6 @@ import {
   BarChart3,
   Activity,
   Eye,
-  Pause,
   X
 } from 'lucide-react';
 import { formatDistanceToNow } from 'date-fns';

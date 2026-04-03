@@ -8,10 +8,7 @@ import {
   X, 
   Filter,
   Search,
-  ChevronDown,
-  CheckCircle,
   AlertCircle,
-  XCircle,
   TrendingUp,
   Calendar,
   Download
@@ -24,7 +21,7 @@ const Logs = () => {
   const [filterApp, setFilterApp] = useState('all');
   const [filterActivity, setFilterActivity] = useState('all');
 
-  const { data: notifications, isLoading, refetch } = useQuery(
+  const { data: notifications, isLoading } = useQuery(
     ['notifications', filterDecision, filterApp, filterActivity],
     async () => {
       const params = new URLSearchParams();

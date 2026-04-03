@@ -96,7 +96,7 @@ export const AuthProvider = ({ children }) => {
 
   const updateActivity = async (activity) => {
     try {
-      const response = await axios.put('/api/users/activity', { activity });
+      await axios.put('/api/users/activity', { activity });
       setUser(prev => ({ ...prev, currentActivity: activity }));
       toast.success(`Activity changed to ${activity}`);
       return { success: true };
@@ -109,7 +109,7 @@ export const AuthProvider = ({ children }) => {
 
   const updatePreferences = async (preferences) => {
     try {
-      const response = await axios.put('/api/users/preferences', { preferences });
+      await axios.put('/api/users/preferences', { preferences });
       setUser(prev => ({ ...prev, preferences }));
       toast.success('Preferences updated successfully');
       return { success: true };
